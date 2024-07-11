@@ -29,6 +29,8 @@ while True:
     except requests.exceptions.RequestException as e:
         print(f"Error scraping data for genre '{genre_input}': {e}")
 
+    # print(f"Scraped all movies data for genre '{genre_input}'.")
+
     fields = ['Title', 'Genre']
 
     # CSV file using csv module
